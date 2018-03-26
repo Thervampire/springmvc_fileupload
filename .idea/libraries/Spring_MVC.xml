@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Spring MVC" type="spring-mvc">
+    <CLASSES>
+      <root url="jar://C:/jarpackage/lib-springmvc/aspectjweaver.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/commons-logging-1.1.3.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-aop-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-aspects-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-beans-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-context-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-core-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-expression-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-jdbc-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-orm-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-tx-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-web-4.3.7.RELEASE.jar!/" />
+      <root url="jar://C:/jarpackage/lib-springmvc/spring-webmvc-4.3.7.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

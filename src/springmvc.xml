@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 导入头文件 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- 扫描controller -->
+	<context:component-scan base-package="com.sxt.controller"/>
+ 
+ <!-- 代替上面注解映射器和注解适配器的配置
+ 	这里面默认加载 一些spring提供的参数绑定的方法  
+ 	如json数据的转换
+  -->
+	<mvc:annotation-driven/>
+ 	<!-- 实例化二进制流解析器 -->
+ 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+ 			<!-- 指定文件上传过程中提交的数据库的编码 -->
+		<property name="defaultEncoding" value="UTF-8"/>
+ 			<!--配置文件上传临时路径  -->
+		<property name="uploadTempDir" value="/upload/temp"/>
+ 			<!-- 配置文件上传的最大文件   10m-->
+		<property name="maxUploadSize" value="1024000000"/>
+ 			
+ 	</bean>
+ 	
+	<!-- 配置视图解析器 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"> </property> -->
+	</bean>
+</beans>
